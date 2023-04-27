@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repository Services</title>
+	<style>
+		body {
+			background-color: #5fb5a8;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			margin: auto;
+			width: 80%;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			margin-top: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 30px;
+			color: #333;
+		}
+		.service {
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.2);
+			width: 300px;
+			height: 200px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			background-color: #fff;
+			transition: transform 0.2s;
+			cursor: pointer;
+		}
+		.service:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		}
+		.service h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+			color: #333;
+		}
+		.service p {
+			font-size: 16px;
+			color: #666;
+			margin-bottom: 10px;
+		}
+		.service button {
+			background-color: #5fb5a8;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.2s;
+		}
+		.service button:hover {
+			background-color: #4d9c90;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="service" onclick="window.location.href='repository.html'">
+			<h2>Repository Hosting</h2>
+			<p>We offer secure and reliable repository hosting for your software projects. Our hosting platform supports Git and other version control systems.</p>
+			<button>Learn More</button>
+		</div>
+		<div class="service" onclick="window.location.href='collaboration.html'">
+			<h2>Collaboration Tools</h2>
+			<p>We provide collaboration tools such as issue tracking, pull requests, and wikis to help your team work together more efficiently.</p>
+			<button>Learn More</button>
+		</div>
+		<div class="service" onclick="window.location.href='automation.html'">
+			<h2>Automation</h2>
+			<p>Our automation tools can help you streamline your development process, with features like continuous integration and deployment.</p>
+			<button>Learn More</button>
+		</div>
+	</div>
+</body>
+</html>

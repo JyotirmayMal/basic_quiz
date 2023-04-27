@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>e-Exam portal</title>
+</head>
+<body>
+    
+   <header>
+		<div class="dashboard-wrapper" style="top: 0px;">
+			<div class="dashboard">
+				<span>Hi! Visitor You Can </span>
+				<a href="login.html">
+				   <span>Login</span>
+				</a>
+				<span>Or</span>
+				<a href="regd.html">Register</a>
+			</div>
+		</div>
+	</header>
+
+    <nav>
+        <div class="menu-icon">
+           <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+           e-Exam portal
+        </div>
+        <div class="nav-items">
+           <li><a href="login.html">e-Exam</a></li>
+           <li><a href="#">Openforum</a></li>
+           <li><a href="repo.html">e-Repository</a></li>
+           <li><a href="#">MyWall</a></li>
+        </div>
+        <div class="search-icon">
+           <span class="fas fa-search"></span>
+        </div>
+        <div class="cancel-icon">
+           <span class="fas fa-times"></span>
+        </div>
+        <form action="#">
+           <input type="search" class="search-data" placeholder="Search" required>
+           <button type="submit" class="fas fa-search"></button>
+        </form>
+     </nav>
+
+     <div class="services-container">
+      <div class="services-image-container">
+      <img src="exam.png" alt="Online Exam Services" class="services-image">
+   </div>
+      <div class="services-text-container">
+      <p class="services-paragraph">Our e-Exam portal provides a range of services for online exams, including secure exam administration, proctoring, and monitoring, automatic grading, customizable exam formats, and real-time results and analytics. 
+         <br>Whether you're a student or an instructor, our platform makes it easy to manage and administer exams online with ease and confidence.</p>
+     </div>
+   </div>
+
+   <footer>
+      <div class="container">
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p>Phone: 123-456-7890</p>
+          <p>Email: info@example.com</p>
+        </div>
+        <div class="footer-address">
+          <h3>Address</h3>
+          <p>123 Bhubaneswar</p>
+          <p>Odisha, India</p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    
+
+     <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const searchBtn = document.querySelector(".search-icon");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+        menuBtn.onclick = ()=>{
+          items.classList.add("active");
+          menuBtn.classList.add("hide");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = ()=>{
+          items.classList.remove("active");
+          menuBtn.classList.remove("hide");
+          searchBtn.classList.remove("hide");
+          cancelBtn.classList.remove("show");
+          form.classList.remove("active");
+          cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = ()=>{
+          form.classList.add("active");
+          searchBtn.classList.add("hide");
+          cancelBtn.classList.add("show");
+        }
+     </script>
+</body>
+</html>

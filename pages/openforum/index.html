@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Open Forum</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/forumstyle.css">
+</head>
+<body>
+	<h1>Open Forum</h1>
+
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" required></textarea>
+
+		<button type="submit" id="submit-btn">Submit</button>
+	</form>
+
+	<div id="feed-container">
+		<!-- Feeds will be dynamically added here using JavaScript -->
+		<div class="feed">
+			<div class="feed-header">
+				<p class="feed-name"><strong>Cherrie Smith</strong></p>	
+			</div>
+			<p class="feed-message">I'm unable to use gcc in my system, it says no such internal command. But I had already installed gcc.What should I do next ?
+				<br>Thank You !</p>
+			<p class="feed-time">1 day ago</p>
+		</div>
+		_________________________________________________________
+		<div class="feed">
+			<div class="feed-header">
+				<p class="feed-name"><strong>John Wick</strong></p>
+			</div>
+			<p class="feed-message">@Cherrie Smith head to the directory where you have gcc.exe, copy that directory and add it to PATH in environment variable.</p>
+			<p class="feed-time">2 hours ago</p>
+		</div>
+		_________________________________________________________
+	</div>
+
+	<script src="../../assets/forumscript.js"></script>
+</body>
+</html>

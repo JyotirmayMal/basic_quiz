@@ -30,12 +30,12 @@ form {
 .formdesign {
   margin-bottom: 20px;
   display: flex;
-align-items: center;
-justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .formdesign div {
-    width: 40%;
+  width: fit-content;
 }
 
 label {
@@ -113,3 +113,35 @@ input[type="checkbox"] {
     padding: 20px;
   }
 }
+.radio-group {
+  display: flex;
+  align-items: center;
+  
+  flex-direction: row;
+}
+
+.radio-group label {
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"], label {
+  display: table-row;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+label, select {
+  margin: 5px 0;
+}
+
+

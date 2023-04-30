@@ -1,0 +1,72 @@
+body {
+    background-color: #007bff;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: azure;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 40px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    background-color: #45a049;
+}
+@media screen and (max-width: 700px) {
+    .container {
+        margin-top: 20px;
+    }
+}
+
+/* Style the dropdown box */
+select {
+    appearance: none; /* remove default appearance */
+    padding: 10px 20px; /* add padding */
+    border: none; /* remove border */
+    border-radius: 10px; /* add rounded corners */
+    background-color: white; /* set background color */
+    color: #333; /* set text color */
+    font-size: 16px; /* set font size */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* add box shadow */
+    cursor: pointer; /* change cursor on hover */
+    outline: none; /* remove outline on focus */
+    margin-bottom: 30px; /* add margin to bottom */
+}
+
+/* Style the dropdown arrow */
+select::after {
+    content: "\25BC"; /* add arrow character */
+    position: absolute; /* position the arrow */
+    top: 50%; /* center vertically */
+    right: 20px; /* position to the right */
+    transform: translateY(-50%); /* center vertically */
+    color: #333; /* set color */
+    font-size: 16px; /* set font size */
+}
+
+/* Style the dropdown options */
+select option {
+    background-color: white; /* set background color */
+    color: #333; /* set text color */
+    font-size: 16px; /* set font size */
+    padding: 10px; /* add padding */
+}

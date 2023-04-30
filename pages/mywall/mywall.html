@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="../../assets/dashboard.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Information</h1>
+    <div class="user-info">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>User ID:</strong> crazy123</p>
+        <p><strong>Age:</strong> 21</p>
+        <p><strong>Gender:</strong> Male</p>
+        <p><strong>Branch:</strong> CSE</p>
+        <p><strong>Technical Skills:</strong> C, Java, Python</p>
+        <p><strong>College Address:</strong> 123 Main St, BBSR Odisha</p>
+        <p><strong>Phone:</strong> 555-555-5555</p>
+      <p><strong>Email:</strong> crazy@example.com</p>
+      <p><strong>Password: </strong> *********</p>
+    </div>
+    <button class="edit-btn" onclick="editUser()">Edit Profile</button>
+    <form id="edit-form" class="edit-form" style="display:none;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="username" value="NAME"><br>
+      <label for="user-id">User ID:</label>
+      <input type="text" id="user-id" name="uid" value="USERID"><br>
+      <label for="branch">Branch:</label>
+      <input type="text" id="branch" name="userbranch" value="BRANCH"><br>
+      <label for="tech-skills">Skills:</label>
+      <input type="text" id="tech-skills" name="user-skill" value="SKILLS"><br>
+      <button type="submit" onclick="saveUser()">Save</button>
+      <button type="button" onclick="cancelEdit()">Cancel</button>
+    </form>
+  </div>
+  <script src="../../assets/dashboard.js"></script>
+</body>
+</html>

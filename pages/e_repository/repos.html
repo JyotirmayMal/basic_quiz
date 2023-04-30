@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<title>e-Repository</title>
+	<link rel="stylesheet" href="../../assets/repostyle.css">
+</head>
+<body>
+	<div style="background-color: #007bff; padding: 20px; color: white; border-radius: 8px;">
+		<h1 style="margin: 0; text-align: center;">Contribution Form</h1>
+		<div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </div>          
+	</div>
+
+	<form id="upload-form">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="description">Description:</label>
+		<textarea id="description" name="description" rows="5" required></textarea>
+
+		<label for="file">Select a file to upload:</label>
+		<input type="file" id="file" name="file" required>
+
+		<button type="submit">Upload</button>
+	</form>
+
+	<h2>Recent Contributions</h2>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Description</th>
+				<th>File</th>
+			</tr>
+		</thead>
+		<tbody id="upload-list">
+			<!-- recent uploads will be added dynamically here -->
+		</tbody>
+	</table>
+
+	</body>
+	<script src="../../assets/reposcript.js"></script>
+</html>

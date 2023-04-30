@@ -1,0 +1,82 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+form {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background :#5fb5a8;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+form button[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#feed-container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.feed-item {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.feed-item h3 {
+	margin: 0 0 5px;
+}
+
+.feed-item p {
+	margin: 0;
+}
+.feed::before {
+	content: "";
+	position: absolute;
+	left: -10px; /* adjust as needed */
+	top: 0;
+	height: 100%;
+	width: 2px;
+	background-color: #ccc; /* set the color of the line */
+  }
+.feed-time {
+	opacity: 0.7;
+  }
+
+.feed-message{
+	font-family: sans-serif;
+}
+	

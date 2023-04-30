@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>e-Exam portal</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./assets/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <title>e-Exam portal</title>
 </head>
 <body>
     
@@ -16,7 +17,7 @@
 				<a href="login.html">
 				   <span>Login</span>
 				</a>
-				<span>Or</span>
+				<span>or</span>
 				<a href="regd.html">Register</a>
 			</div>
 		</div>
@@ -31,9 +32,9 @@
         </div>
         <div class="nav-items">
            <li><a href="login.html">e-Exam</a></li>
-           <li><a href="#">Openforum</a></li>
-           <li><a href="repo.html">e-Repository</a></li>
-           <li><a href="#">MyWall</a></li>
+           <li><a href="./pages/openforum/index.html">Openforum</a></li>
+           <li><a href="./pages/e_repository/repos.html">e-Repository</a></li>
+           <li><a href="./pages/mywall/mywall.html">MyWall</a></li>
         </div>
         <div class="search-icon">
            <span class="fas fa-search"></span>
@@ -49,7 +50,7 @@
 
      <div class="services-container">
       <div class="services-image-container">
-      <img src="exam.png" alt="Online Exam Services" class="services-image">
+      <img src="./assets/exam.png" alt="Online Exam Services" class="services-image">
    </div>
       <div class="services-text-container">
       <p class="services-paragraph">Our e-Exam portal provides a range of services for online exams, including secure exam administration, proctoring, and monitoring, automatic grading, customizable exam formats, and real-time results and analytics. 
@@ -72,40 +73,13 @@
         <div class="footer-social">
           <h3>Follow Us</h3>
           <ul>
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>
     </footer>
-    
-
-     <script>
-        const menuBtn = document.querySelector(".menu-icon span");
-        const searchBtn = document.querySelector(".search-icon");
-        const cancelBtn = document.querySelector(".cancel-icon");
-        const items = document.querySelector(".nav-items");
-        const form = document.querySelector("form");
-        menuBtn.onclick = ()=>{
-          items.classList.add("active");
-          menuBtn.classList.add("hide");
-          searchBtn.classList.add("hide");
-          cancelBtn.classList.add("show");
-        }
-        cancelBtn.onclick = ()=>{
-          items.classList.remove("active");
-          menuBtn.classList.remove("hide");
-          searchBtn.classList.remove("hide");
-          cancelBtn.classList.remove("show");
-          form.classList.remove("active");
-          cancelBtn.style.color = "#ff3d00";
-        }
-        searchBtn.onclick = ()=>{
-          form.classList.add("active");
-          searchBtn.classList.add("hide");
-          cancelBtn.classList.add("show");
-        }
-     </script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

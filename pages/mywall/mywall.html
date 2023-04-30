@@ -9,29 +9,43 @@
 </head>
 <body>
   <div class="container">
-    <h1>User Information</h1>
+    <div class="card-header">
+      <img src="../../assets/profile.avif" alt="Profile Image" class="profile-img" height="150" width="150" id="profile-img">
+      <input type="file" id="file-input" style="display: none;">
+    </div>
+    
     <div class="user-info">
-        <p><strong>Name:</strong> John Doe</p>
-        <p><strong>User ID:</strong> crazy123</p>
+        <p>  &nbsp;         </p>
+        <p>  &nbsp;         </p>
+        <p>  &nbsp;         </p>
+        <p><strong>Name:</strong> Trilochan Sahu</p>
+        <p><strong>User ID:</strong> 21bcsl28</p>
         <p><strong>Age:</strong> 21</p>
         <p><strong>Gender:</strong> Male</p>
         <p><strong>Branch:</strong> CSE</p>
         <p><strong>Technical Skills:</strong> C, Java, Python</p>
-        <p><strong>College Address:</strong> 123 Main St, BBSR Odisha</p>
+        <p><strong>College Address:</strong> Silicon Institute Technology</p>
         <p><strong>Phone:</strong> 555-555-5555</p>
-      <p><strong>Email:</strong> crazy@example.com</p>
+      <p><strong>Email:</strong> tsahu0241@gmail.com</p>
       <p><strong>Password: </strong> *********</p>
     </div>
+    
     <button class="edit-btn" onclick="editUser()">Edit Profile</button>
     <form id="edit-form" class="edit-form" style="display:none;">
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
       <label for="name">Name:</label>
-      <input type="text" id="name" name="username" value="NAME"><br>
+      <input type="text" id="name" name="username" value="Enter name"><br>
       <label for="user-id">User ID:</label>
-      <input type="text" id="user-id" name="uid" value="USERID"><br>
+      <input type="text" id="user-id" name="uid" value="New User ID"><br>
       <label for="branch">Branch:</label>
-      <input type="text" id="branch" name="userbranch" value="BRANCH"><br>
+      <input type="text" id="branch" name="userbranch" value="Update"><br>
       <label for="tech-skills">Skills:</label>
-      <input type="text" id="tech-skills" name="user-skill" value="SKILLS"><br>
+      <input type="text" id="tech-skills" name="user-skill" value="New S"><br>
+      <label for="dp">Profile Picture:</label>
+      <input type="file" id="dp" name="user-pic" value="display-pic"><br>
+      <br>
       <button type="submit" onclick="saveUser()">Save</button>
       <button type="button" onclick="cancelEdit()">Cancel</button>
     </form>

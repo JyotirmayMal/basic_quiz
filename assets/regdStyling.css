@@ -1,7 +1,9 @@
 
 /* Body styles */
 body {
-  background-color: #5fb5a8;
+  background-image: url('../assets/exam.png');
+  background-size: cover;
+  background-position: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,27 +13,32 @@ body {
 h1 {
   color: #09385a;
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   text-align: center;
   text-transform: uppercase;
 }
 
 /* Form styles */
 form {
-  background-color: #fff;
-  border-radius: 5px;
+  background-color:burlywood;
+  opacity: 0.95;
+  border-radius: 15px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  /* margin: 0 auto; */
   max-width: 700px;
-  padding: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  box-shadow: inset -2px 2px 2px white;
 }
 
 /* Form fieldset styles */
 .formdesign {
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+  align-items:flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .formdesign div {
@@ -39,10 +46,15 @@ form {
 }
 
 label {
-  color: #555;
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 1.1rem;
   margin-bottom: 10px;
+  width: 95%;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
 }
 
 input[type="text"],
@@ -52,17 +64,17 @@ input[type="tel"],
 select,
 textarea {
   border: none;
-  border-radius: 4px;
+  border-radius: 0px 20px 20px 0px;
   box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
   font-size: 1.1rem;
   padding: 10px;
-  width: 100%;
+  width: 80%;
 }
 
 /* Form button styles */
 input[type="submit"],
 input[type="reset"] {
-  background-color: #226899;
+  background-color: #45a049;
   border: none;
   border-radius: 9px;
   color: #fff;
@@ -75,7 +87,7 @@ input[type="reset"] {
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background-color: #123f5e;
+  background-color: #45a060;
 }
 
 /* Form error styles */
@@ -88,6 +100,7 @@ input[type="reset"]:hover {
 /* Form radio button styles */
 input[type="radio"] {
   margin-right: 5px;
+  color: #45a049;
 }
 
 /* Form select styles */
@@ -131,7 +144,7 @@ input[type="checkbox"], label {
 .checkbox-wrapper {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items:flex-end;
   justify-content: space-between;
 }
 
@@ -141,7 +154,17 @@ input[type="checkbox"], label {
   justify-content: space-evenly;
 }
 label, select {
-  margin: 5px 0;
+  margin: 0px 0;
 }
 
 
+.gender-category{
+  margin: 15px 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.gender-category label{
+  padding: 0 20px 0 5px;
+}

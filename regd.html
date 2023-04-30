@@ -9,40 +9,43 @@
 </head>    
 <body>
 <center>
-<h1>Create your profile</h1>
+
 
 <form action= "./login.html" name="myform" onsubmit="return validateForm()" method="get">
+  <h1>Create your profile</h1>
     <div class="formdesign" id="name">
-        Name: <input type="text" name="fname" required><span class="fromerror" id="nameError"><b></b></span>
+       Name: <input type="text" placeholder="Enter your name"fname" required><span class="fromerror" id="nameError"><b></b></span>
       </div>
       
       <div class="formdesign" id="nameuser-id">
-        User ID: <input type="text" name="userId" required><span class="fromerror" id="userIdError"><b></b></span>
+        User ID: <input type="text" placeholder="Enter UserID" name="userId" required><span class="fromerror" id="userIdError"><b></b></span>
       </div>
       
       <div class="formdesign" id="age">
-        Age: <input type="text" name="fage" required><span class="fromerror" id="ageError"><b></b></span>
+        Age: <input type="text" placeholder="Enter your age" name="fage" required><span class="fromerror" id="ageError"><b></b></span>
       </div>
     
       <div>
         
         <div class="radio-group">
           Gender :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="gender-category">
           <input type="radio" id="male" name="user_gender" value="MALE">
           <label for="male">MALE</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="radio" id="female" name="user_gender" value="FEMALE">
           <label for="female">FEMALE</label>
+          </span>
         </div>
       </div>
-      <div class="form-group">
-        <label for="branch">Choose your branch:</label>
+      <span class="form-group">
+        Branch:
         <select name="branch" id="branch">
           <option value="CSE">CSE</option>
           <option value="CSIT">CSIT</option>
           <option value="CSSI">CSSI</option>
           <option value="CSML">CSML</option>
         </select>
-      </div>
+      </span>
       
 
     <div>
@@ -63,7 +66,7 @@
     
     
     <div class="formdesign" id="address">
-        College: <input type="text"name="faddress" required><span class="fromerror"><b></b></span>
+        College: <input type="text" placeholder="Enter your college name" name="faddress" required><span class="fromerror"><b></b></span>
     </div>
 
     <div class="formdesign" id="file-upload">
@@ -71,19 +74,19 @@
     </div>
 
     <div class="formdesign" id="phone"required>
-        Phone: <input type="phone"name="fphone"required><span class="fromerror"><b></b></span>
+        Phone: <input type="phone" placeholder="Enter your phone number" name="fphone"required><span class="fromerror"><b></b></span>
     </div>
 
     <div class="formdesign" id="email">
-    Email: <input type="email"name="femail" required><span class="fromerror"><b></b></span>
+    Email: <input type="email" placeholder="Enter your email address" name="femail" required><span class="fromerror"><b></b></span>
     </div>
     
     <div class="formdesign" id="pass"required>
-    Password: <input type="password"name="fpass"required><span class="fromerror"><b></b></span>
+    Password: <input type="password" placeholder="Enter password" name="fpass"required><span class="fromerror"><b></b></span>
     </div>
     
     <div class="formdesign" id="cpass">
-    Confirm Password: <input type="text"name="fcpass"required>
+    Confirm Password: <input type="text" placeholder="Confirm your entered password" name="fcpass"required>
     <span class="fromerror"><b></b></span>
     </div>
     

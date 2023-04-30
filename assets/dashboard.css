@@ -1,15 +1,23 @@
 body {
     font-family: Arial, sans-serif;
-    background :#5fb5a8;
+    background-image: url('../assets/exam.png');
+    background-size: cover;
+    background-position: center;
     margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
   }
   
   .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 80px auto;
     padding: 20px;
     background-color: #fff;
+    border-radius: 20px;
+    opacity: 0.91;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row
   }
   
   h1 {
@@ -80,4 +88,16 @@ body {
   button[type="submit"]:hover, button[type="button"]:hover {
     background-color: #3367d6;
   }
-  
+
+
+.card-header .profile-img{
+  height: 150px;
+  width: 150px;
+  border-radius: 1000px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 8px solid rgb(212,50,10);
+  box-shadow: 0 0 20px rgb(31,27,30);
+  margin-bottom: 30px;
+}

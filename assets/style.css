@@ -255,7 +255,24 @@ nav .logo.space{
 }
 
 .services-image-container {
-  width: 80%;
+  width: 100%;
+  background-image: url('image1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.slider {
+  display: none;
+  background-size: cover;
+  background-position: center;
+  animation: slide 1s linear infinite;
+}
+
+@keyframes slide {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 .services-image {

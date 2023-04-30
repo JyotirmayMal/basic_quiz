@@ -1,10 +1,13 @@
 
 		body {
-			background-color:  #5fb5a8;
+			background-image: url('../assets/exam.png');
+  			background-size: cover;
+  			background-position: center;
 			font-family: Arial, sans-serif;
 		}
 		form {
 			background-color: white;
+			opacity: 0.90;
 			padding: 20px;
 			border-radius: 10px;
 			box-shadow: 0 0 10px rgba(0,0,0,0.2);

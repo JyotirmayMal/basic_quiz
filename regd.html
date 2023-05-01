@@ -13,31 +13,27 @@
 
 <form action= "./login.html" name="myform" onsubmit="return validateForm()" method="get">
   <h1>Create your profile</h1>
-    <div class="formdesign" id="name">
-       Name: <input type="text" placeholder="Enter your name"fname" required><span class="fromerror" id="nameError"><b></b></span>
+      <div class="formdesign" id="name">
+        Name: <input type="text" placeholder="Enter your name"fname" required><span class="fromerror" id="nameError"><b></b></span>
       </div>
-      
       <div class="formdesign" id="nameuser-id">
         User ID: <input type="text" placeholder="Enter UserID" name="userId" required><span class="fromerror" id="userIdError"><b></b></span>
       </div>
-      
       <div class="formdesign" id="age">
         Age: <input type="text" placeholder="Enter your age" name="fage" required><span class="fromerror" id="ageError"><b></b></span>
       </div>
-    
       <div>
-        
-        <div class="radio-group">
-          Gender :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="gender-category">
+        <div class="formdesign radio-group">
+          Gender :
+          <div class="gender-category">
           <input type="radio" id="male" name="user_gender" value="MALE">
-          <label for="male">MALE</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="male">Male</label>
           <input type="radio" id="female" name="user_gender" value="FEMALE">
-          <label for="female">FEMALE</label>
-          </span>
+          <label for="female">Female</label>
+          </div>
         </div>
       </div>
-      <span class="form-group">
+      <div class="formdesign form-group">
         Branch:
         <select name="branch" id="branch">
           <option value="CSE">CSE</option>
@@ -45,21 +41,23 @@
           <option value="CSSI">CSSI</option>
           <option value="CSML">CSML</option>
         </select>
-      </span>
+      </div>
       
 
     <div>
       
-      <div class="checkbox-wrapper">
+      <div class="formdesign">
         Technical Skills:
-        <input type="checkbox" id="c" name="technicalSkills" value="C">
-        <label for="lang1"> C</label>
-        <input type="checkbox" id="java" name="technicalSkills" value="Java">
-        <label for="lang2"> Java</label>
-        <input type="checkbox" id="python" name="technicalSkills" value="Python">
-        <label for="lang3"> Python</label>
-        <input type="checkbox" id="jsp" name="technicalSkills" value="JSP">
-        <label for="lang4"> JSP</label>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" id="c" name="technicalSkills" value="C">
+          <label for="lang1"> C</label>
+          <input type="checkbox" id="java" name="technicalSkills" value="Java">
+          <label for="lang2"> Java</label>
+          <input type="checkbox" id="python" name="technicalSkills" value="Python">
+          <label for="lang3"> Python</label>
+          <input type="checkbox" id="jsp" name="technicalSkills" value="JSP">
+          <label for="lang4"> JSP</label>
+        </div>
       </div>
       <span class="fromerror" id="technicalSkillsError"><b></b></span>
     </div>
@@ -90,7 +88,7 @@
     <span class="fromerror"><b></b></span>
     </div>
     
-    <input type="SUBMIT" class="but" value="submit" onclick="alert('Registered Succesfully')">
+    <input type="SUBMIT" class="but" value="submit" onsubmit="alert('Registered Succesfully')">
     <input type="RESET" class="but" value="reset">
 </form>
 </center>

@@ -25,7 +25,6 @@ editBtn.addEventListener('click', () => {
   uidInput.value = userInfoSection.querySelector('p:nth-of-type(5)').textContent.split(':')[1].trim();
   branchInput.value = userInfoSection.querySelector('p:nth-of-type(8)').textContent.split(':')[1].trim();
   skillInput.value = userInfoSection.querySelector('p:nth-of-type(9)').textContent.split(':')[1].trim();
-  fileInput.click();
 });
 
 // Add event listener to cancel button
@@ -34,6 +33,8 @@ document.querySelector('.edit-form button[type="button"]').addEventListener('cli
   editForm.style.display = 'none';
   userInfoSection.style.display = 'block';
 });
+
+
 
 // Add event listener to save button
 document.querySelector('.edit-form button[type="submit"]').addEventListener('click', (event) => {
@@ -45,16 +46,18 @@ document.querySelector('.edit-form button[type="submit"]').addEventListener('cli
   userInfoSection.querySelector('p:nth-of-type(5)').textContent = `UserID: ${uidInput.value}`;
   userInfoSection.querySelector('p:nth-of-type(8)').textContent = `Branch: ${branchInput.value}`;
   userInfoSection.querySelector('p:nth-of-type(9)').textContent = `Technical Skills: ${skillInput.value}`;
-  fileInput.addEventListener('change', () => {
-    const file = fileInput.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    reader.onload = () => {
-      profileImg.src = reader.result;
-    };
-  });
+  
 
   // Hide the edit form and display the updated user info section
   editForm.style.display = 'none';
   userInfoSection.style.display = 'block';
+});
+
+fileInput.addEventListener('change', () => {
+  const file = fileInput.files[0];
+  const reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onload = () => {
+    profileImg.src = reader.result;
+  };
 });
